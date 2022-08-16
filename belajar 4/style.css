@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Courgette&family=EB+Garamond:ital@1&family=Source+Sans+Pro:ital,wght@0,300;1,400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+header{
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(51, 51, 51);
+    position: fixed;
+    opacity: 90%;
+}
+
+header ul li {
+    display: inline-block;
+    padding: 16px;
+}
+header ul{
+    float: right;
+    text-decoration: none;
+}
+header ul li a{
+    text-decoration: none;
+    color: rgb(183, 185, 184);
+}
+header ul li a:hover{
+    text-decoration: none;
+    color: rgb(243, 245, 244);
+}
+span{
+    margin: 0 10px;
+}
+header h1{
+    float: left;
+    display: inline-block;
+    padding: 5px 15px;
+    
+    
+}
+header h1 a{
+    text-decoration: none;
+    color: rgb(242, 247, 245);
+}
+.container{
+    width: 70%;
+    margin: 0 auto;
+    /* border: 2px solid; */
+}
+.container::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#check{
+    display: none;
+}
+.mobile-menu{
+    float: right;
+    display: none;
+    padding: 15px;
+}
+.mobile-menu:hover{
+    cursor: pointer;
+}
+.sidebar{
+    width: 200px;
+    left: -200px;
+    background-color: rgb(121, 121, 121);
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 999;
+    opacity: 80%;
+    transition: 0.5s;
+}
+.sidebar ul li a{
+    text-decoration: none;
+    color: azure;
+    
+}
+.sidebar ul li{
+    padding: 20px 5px;
+    transition: 0.4s;
+    transition-property: background-color;
+}
+.sidebar ul li:hover{
+    background-color: rgb(151, 153, 153);
+}
+#check:checked ~ .sidebar{
+    left: 0;
+}
+
+
+section h1{
+    font-size: 55px;
+    margin-top: 20px;
+    font-family: sans-serif;
+}
+section h3{
+    font-size: 28px;
+    color: rgb(51, 49, 49);
+    font-family: sans-serif;
+    font-weight: normal;
+    margin-top: 10px;
+}
+section .container .link a{
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 25px;
+    color: rgb(9, 133, 204);
+}
+section .container{
+    text-align: center;
+    margin-top: 100px;
+}
+.link i{
+    font-size: 15px;
+    margin-top: 15px;
+    color: rgb(9, 133, 204);
+}
+.container  img{
+    width: 100%;
+}
+section .bg-color{
+    background-color: black;
+}
+.bg-color .container{
+    color: aliceblue;
+}
+.bg-color .container h3{
+    color: rgb(158, 159, 160);
+}
+
+
+section .bg-white .container p{
+    margin-top: 40px;
+    color: rgb(211, 84, 0);
+}
+section .bg-white .container h1{
+    margin-top: 5px;
+}
+
+
+
+section .main img{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+section .container .main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+
+section .container .teater{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    gap: 10px;
+}
+section .container .teater .film{
+    background-image: url(img/Collage-con-le-locandine.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+    /* padding-top: 50px; */
+}
+section .container .teater .film .linear{
+    margin-top: 300px;
+    background-image: linear-gradient(-360deg,rgb(10, 10, 10),rgb(10, 10, 10),rgba(10, 10, 10, 0.3));
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+section .container .teater .game{
+    background-image: url(img/top-mobile-games.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+}
+.teater .film .linear h2{
+    /* margin-top: 200px; */
+    color: antiquewhite;
+    padding-top: 20px;
+}
+.teater .film .linear p{
+    /* margin-top: 200px; */
+    color: antiquewhite;
+}
+
+
+section .container .artikel p{
+    color: rgb(107, 107, 107);
+    font-size: 13px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+
+section .container .apple{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: left;
+}
+.apple ul{
+    list-style-type: none;
+    padding: 10px 0;
+}
+.apple ul li{
+    padding-bottom: 10px;
+}
+section .container .apple .bb a{
+    text-decoration: none;
+    color: #777;
+    font-size: 13px;
+    padding-bottom: 5px;
+}
+section .container .apple .bb a:hover{
+    text-decoration: underline;
+    color: #444;
+}
+section .container .apple .layanan a{
+    text-decoration: none;
+    color: #777;
+    font-size: 13px;
+}
+section .container .apple .layanan a:hover{
+    text-decoration: underline;
+    color: #444;
+}
+section .container .apple .bisnis a{
+    text-decoration: none;
+    color: #777;
+    font-size: 13px;
+}
+section .container .apple .bisnis a:hover{
+    text-decoration: underline;
+    color: #444;
+}
+section .container .apple .point a{
+    text-decoration: none;
+    color: #777;
+    font-size: 13px;
+}
+section .container .apple .point a:hover{
+    text-decoration: underline;
+    color: #444;
+}
+.apple h5{
+    color: rgb(94, 93, 93);
+}
+
+
+footer{
+    margin-bottom: 20px;
+    color: #777;
+    font-size: 13px;
+}
+footer .container .akhir{
+    display: flex;
+    font-size: 13px;
+    margin-top: 10px;
+}
+footer .container a{
+    text-decoration: none;
+    color: rgb(9, 133, 204);
+}
+.akhir .wan{
+    margin-right: 20px;
+}
+.akhir .tu{
+    margin-right: 10px;
+}
+.akhir .tri{
+    margin-right: 10px;
+}
+.akhir .for{
+    margin-right: 10px;
+}
+.akhir .fiv{
+    margin-right: 120px;
+}
+footer .container .kanan{
+    font-size: 13px;
+}
+
+@media(max-width:1028px){
+    .mobile-menu{
+        display: block;
+    }
+    header ul{
+        display: none;
+    }
+    section .container .main{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    section .container .teater{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    footer .container .akhir{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
